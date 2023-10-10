@@ -33,6 +33,8 @@ class ProductManager{
 
         console.log(`El producto: ${producto.code} ya existe`);
 
+        }else{
+            console.log('El producto fue registrado')
         }
         this.productos.push('Producto agregado',producto);
         return producto;
