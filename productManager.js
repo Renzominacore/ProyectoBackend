@@ -53,7 +53,7 @@ class ProductManager{
     
           if (data.length !== filteredData.length) {
             await fs.promises.writeFile(this.path, JSON.stringify(data));
-            return filteredData
+            return console.log ('Elproducto fue eliminado: Lista de productos',filteredData)
           } else {
             console.log(`ID ${id} no existe en este archivo`);
             return null;
@@ -76,15 +76,5 @@ instancia.obtenerProductos().then((productos)=>{
 })
 instancia.borrarPorId(3)
 
-.then((result) => {
 
-console.log('Resultado:',result);
-
-})
-
-.catch((error) => {
-
-console.error('Error:', error);
-
-});
 
