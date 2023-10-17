@@ -53,6 +53,7 @@ class ProductManager{
     
           if (data.length !== filteredData.length) {
             await fs.promises.writeFile(this.path, JSON.stringify(data));
+            return filteredData
           } else {
             console.log(`ID ${id} no existe en este archivo`);
             return null;
