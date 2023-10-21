@@ -76,5 +76,3 @@ instancia.obtenerProductos().then((productos)=>{
 })
 instancia.borrarPorId(3)
 
-
-
